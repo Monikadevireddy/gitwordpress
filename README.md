@@ -1,6 +1,6 @@
-Git WordPress for OpenShift
+Posts in WordPress
 ===========================
 
-It seems to me that there was a wordpress that was made to work with openshift and git. The current one on openshift will let you do themes and plugins on git, but doesn't seem to be set up to also run on test in localhost. I just made a wp_config that uses the openshift environment variables.
+Posts are the first piece of the Wordpress puzzle and form the basic content of a wordpress site. Posts are added from the Wordpress Dashboard.
 
-This particular instance is primarily to test with woocommerce and auberge.
+![wordpress dashboard](https://rhildred.github.io/courses/INFO2120/Dashboard.png "wordpress dashboard") 
