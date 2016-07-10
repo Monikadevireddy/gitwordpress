@@ -1,6 +1,12 @@
-Posts in WordPress
-===========================
+Wordpress Test Site
+==
 
-Posts are the first piece of the Wordpress puzzle and form the basic content of a wordpress site. Posts are added from the Wordpress Dashboard.
+This is a setup for running a wordpress test on a virtual machine. Export the class list from Brightspace/D2l and then run toaster.pl on it. You will also want a link in Brightspace/D2l that looks like this:
 
-![wordpress dashboard](https://rhildred.github.io/courses/INFO2120/Dashboard.png "wordpress dashboard") 
+```
+
+<script>// <![CDATA[
+document.write('<a href="http://192.168.2.20/' + Global.UserName + '" target="blank">' + Global.UserName + "</a>")
+// ]]></script>
+
+```
