@@ -24,7 +24,7 @@ $sUName = isset($_ENV['OPENSHIFT_MYSQL_DB_USERNAME']) ? $_ENV['OPENSHIFT_MYSQL_D
 define('DB_USER', $sUName);
 
 /** MySQL database password */
-$sPwd = isset($_ENV['OPENSHIFT_MYSQL_DB_PASSWORD']) ? $_ENV['OPENSHIFT_MYSQL_DB_PASSWORD'] : null;
+$sPwd = isset($_ENV['OPENSHIFT_MYSQL_DB_PASSWORD']) ? $_ENV['OPENSHIFT_MYSQL_DB_PASSWORD'] : 'Secret6503';
 define('DB_PASSWORD', $sPwd);
 
 /** MySQL hostname */
@@ -63,7 +63,8 @@ define('NONCE_SALT',       'put your unique phrase here');
  * You can have multiple installations in one database if you give each a unique
  * prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp_';
+$aUrl = explode('/', $_SERVER['REQUEST_URI']);
+$table_prefix  = 'wp' . $aUrl[1] . '_';
 
 /**
  * WordPress Localized Language, defaults to Canadian English.
