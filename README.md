@@ -19,3 +19,7 @@ You may also want to update php.ini to have
 upload_max_filesize = 200M
 
 ```
+
+Note: I put a big red warning about writing the username and password down. When 3 students forgot I manually made them new directories. The other option would be to drop all of the tables with their username, but that could possibly be disruptive in a testing situation.
+
+Note2: Jetpack wouldn't install on a non-public url.
