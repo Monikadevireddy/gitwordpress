@@ -10,3 +10,6 @@ while( my $line = <$info>)  {
 }
 
 close $info;
+system('sudo apt-get install php-curl');
+system('sudo chown -R www-data ../*');
+system('sudo chgrp -R www-data ../*');
