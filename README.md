@@ -10,3 +10,12 @@ document.write('<a href="http://192.168.2.20/' + Global.UserName + '" target="bl
 // ]]></script>
 
 ```
+
+You may also want to update php.ini to have
+
+```
+; Maximum allowed size for uploaded files.
+; http://php.net/upload-max-filesize
+upload_max_filesize = 200M
+
+```
